@@ -1,3 +1,4 @@
+#1
 $ iwctl
 [iwd]$ devices list
 [iwd]$ station *device* scan
@@ -6,3 +7,12 @@ $ iwctl
 [iwd]$ station *device* connect *SSID*
 or
 $ iwctl --passphrase passphrase station *device* connect *SSID*
+
+#2
+$ iwctl
+[iwd]$ wsc list
+(push the wps button for this one)[iwd]$ wsc *device* push-button
+
+Disconnect
+$ iwctl
+[iwd]$ station *device* disconnct
